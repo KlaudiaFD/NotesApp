@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(223, 225, 226);
+}
+
+header {
+    margin: 30px;
+    font-size: 15px;
+    
+}
+
+section {
+    justify-content: center;
+    background-image: linear-gradient(340deg, #000000 0%, #b5b8b8 100%);
+    margin-top: 20px;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+}
+
+.nav-icon {
+    text-align: center;
+    margin: 3px;
+    
+}
+
+button {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    transition: background-color .3s;
+}
+
+button:hover{
+    background-color: rgb(126, 123, 123);
+}
+
+.complete{
+    color: green;
+    float:left;
+}
+
+.edit{
+    color:white;
+}
+
+.delete{
+    color: red;
+    float:right;
+}
+
+textarea {
+    height: 300px;
+    width: 300px;
+}
+
+
+
+
+@media only screen and (min-width: 500px) {
+
+    header{
+        font-size: 20px;
+    }
+
+    .container {
+        height: 450px;
+        width: 450px;
+    }
+
+
+    textarea {
+        height: 450px;
+        width: 450px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
