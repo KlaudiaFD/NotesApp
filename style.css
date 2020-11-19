@@ -1,34 +1,33 @@
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 }
 
-body{
+body {
     display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     background-color: rgb(194, 192, 192);
 
 }
-#container, #write, #read
-{
-    
+
+#container, #write, #read {   
     height: 100%;
     width: 100%;
     padding: 15px;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 45px;
 }
 
-label{
+label {
     font-size: 25px;
     background-color: rgb(167, 164, 164);
     border-radius: 5px;
@@ -36,32 +35,33 @@ label{
     padding: 5px;
 }
 
-#noteTitle{
+#noteTitle {
     height: 70px;
     width: 100%;
     font-size: 20px;
     padding: 10px;
     margin: 5px;
 }
-#noteBody{
+
+#noteBody {
     height: 300px;
     width: 100%;
     font-size: 25px;
     margin: 5px;
 }
 
-#noteMaster{
+#noteMaster {
     height: 200px;
     width: 100%;
     padding: 5px;
     margin: 5px;
 }
 
-select{
+select {
     height: 200px;
 }
 
-#noteDisplay{
+#noteDisplay {
     padding: 20px;
     margin: 10px;
     border: 1px solid #0c0c0c;
@@ -74,17 +74,17 @@ select{
     padding: 10px;
 }
 
-button{
+button {
     margin: 5px;
     font-size: 25px;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.15s ease-in-out;
     
 }
 
-button:hover{
+button:hover {
     transform: scale(0.9);
     background-color: rgb(75, 72, 72);
     border-color: rgb(75, 72, 72);;
