@@ -8,27 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Hello in Notes App!</h1>
-    </header>
-
-    <section>
-        <div class="container">
-            <div class="nav-icon">
-                <button class="add"><i class="fas fa-check"></i></button>
-                <button class="edit">EDIT</button>
-                <button class="delete"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="notes">
-                <textarea class="notesArea" name="notes-area" cols="x" rows="y" placeholder="Place for yours note..."></textarea>
-            </div>
-            <div class="date"></div>
+    <div class="container">
+        <h1>NotesApp</h1>
+        <div id="write">
+            <label for="noteTitle">Note Title</label>
+            <input type="text" id="noteTitle"/>
+            <label for="noteBody">Note</label>
+            <textarea id="noteBody"></textarea>
+            <button id="btnSave">Save Note</button>
         </div>
-    </section>
-    <section class="newNotes">
+        <div id="read">
+            <button id="btnWrite">Write Note</button>
+            <select size="10" id="noteMaster"></select>
+            <div id="noteDisplay"></div>
+        </div>
+    </div>
 
-    </section>
 
+    <script src="note.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
