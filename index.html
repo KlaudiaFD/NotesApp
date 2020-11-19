@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes App</title>
     <script src="https://kit.fontawesome.com/dbca70ffe7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="container">
         <h1>NotesApp</h1>
         <div id="write">
-            <label for="noteTitle">Note Title</label>
-            <input type="text" id="noteTitle"/>
-            <label for="noteBody">Note</label>
-            <textarea id="noteBody"></textarea>
+            <label>
+                Note Title
+                <input type="text" id="noteTitle"/>
+            </label>
+            <label>
+                Note
+                <textarea id="noteBody"></textarea>
+            </label>
             <button id="btnSave">Save Note</button>
         </div>
         <div id="read">
@@ -23,7 +27,6 @@
             <div id="noteDisplay"></div>
         </div>
     </div>
-
 
     <script src="note.js"></script>
     <script src="main.js"></script>

@@ -1,15 +1,15 @@
 const btnSave=document.querySelector('#btnSave');
-let notes="";
+let notes;
 init();
 
 function init(){
-    let out="";
+    let out;
     let noteArray=JSON.parse(localStorage.getItem('noteData'));
     
     if(noteArray != null && noteArray != ""){
         noteArray= JSON.parse(localStorage.getItem('noteData'));
         
-        for (let x=0; x < noteArray.length; x++){
+        for(let x=0; x < noteArray.length; x++){
             out += "<option value=" +x + ">";
             out += noteArray[x].title;
             out += "</option>";
@@ -68,12 +68,10 @@ btnSave.onclick=function(){
 
 function saveNotes(note){
     let noteArray= JSON.parse(localStorage.getItem('noteData'));
-    if (noteArray == null){
-
+    if(noteArray == null){
         noteArray= new Array();
         noteArray.push(note);
-
-    }else{
+    } else {
         noteArray.push(note)
     }
     localStorage.setItem('noteData', JSON.stringify(noteArray));
